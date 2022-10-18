@@ -42,11 +42,11 @@ AppRouter.propTypes = {
   appRoutes: PropTypes.arrayOf(PropTypes.shape(appRouterShape)).isRequired,
 };
 
-const AppWrapperComponent = ({ appRoutes }) => {
+const AppWrapperComponent = ({ appRoutes, basename }) => {
   const theme = useTheme();
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={basename}>
       <ThemeProvider theme={theme}>
         <SnackbarProvider>
           <Container sx={{ mt: 3 }}>
@@ -60,6 +60,11 @@ const AppWrapperComponent = ({ appRoutes }) => {
 
 export default memo(AppWrapperComponent);
 
+AppWrapperComponent.defaultProps = {
+  basename: "",
+};
+
 AppWrapperComponent.propTypes = {
   appRoutes: PropTypes.arrayOf(PropTypes.shape(appRouterShape)).isRequired,
+  basename: PropTypes.string,
 };
