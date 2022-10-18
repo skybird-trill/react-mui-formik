@@ -1,8 +1,8 @@
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import AddIcon from "@mui/icons-material/Add";
 import {
-  Link,
   ListItemButton,
   ListItemIcon,
   ListItemText,
@@ -10,8 +10,8 @@ import {
 
 const AddUserListItemComponent = ({ route }) => (
   <ListItemButton
-    component={Link}
-    href={route}
+    component={NavLink}
+    to={route}
   >
     <ListItemIcon>
       <AddIcon />

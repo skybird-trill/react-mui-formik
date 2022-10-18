@@ -46,7 +46,7 @@ const AppWrapperComponent = ({ appRoutes }) => {
   const theme = useTheme();
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ThemeProvider theme={theme}>
         <SnackbarProvider>
           <Container sx={{ mt: 3 }}>

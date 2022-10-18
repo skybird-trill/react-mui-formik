@@ -1,7 +1,7 @@
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import {
-  Link,
   ListItemAvatar,
   ListItemButton,
   ListItemText,
@@ -37,8 +37,8 @@ const UserListItemComponent = ({
 
   return (
     <ListItemButton
-      component={Link}
-      href={route.replace(":id", id)}
+      component={NavLink}
+      to={route.replace(":id", id)}
     >
       <ListItemAvatar>
         {id}.
