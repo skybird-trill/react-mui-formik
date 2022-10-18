@@ -5,7 +5,7 @@ import routeNames from "../constants/routeNames";
 
 export const appRoutes = [
   { path: routeNames.Main, exact: true, component: UsersListPage },
-  { path: routeNames.Add, exact: true, component: UserDetailsPage },
-  { path: routeNames.Details, exact: true, component: UserDetailsPage },
+  { path: routeNames.Add, component: UserDetailsPage },
+  { path: routeNames.Details, component: UserDetailsPage },
   { redirect: routeNames.Main },
 ];
