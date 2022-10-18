@@ -1,3 +1,17 @@
+# React MUI Formik App info
+
+This app is an example of usage React with Formik's hook [useFormik](https://formik.org/docs/api/useFormik). Formik was chosen instead of popular [React Hook Form](https://react-hook-form.com/) in sence of more code readability and no needs in controller wrappers.
+
+Also, [revalidator](https://github.com/flatiron/revalidator) is used for form validations instead of popular [yup](https://github.com/jquense/yup) for the same readability and maintainance reasons.
+
+[MUI](https://mui.com/) library is used for UI components.
+
+User's data is loading from [jsonplaceholder](https://jsonplaceholder.typicode.com/).
+
+App demo can be found [here](https://skybird-trill.github.io/react-mui-formik/).
+
+Below is information for local running.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
